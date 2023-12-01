@@ -1,5 +1,5 @@
 ﻿// Importe suas chaves de um arquivo de configuração
-import { API_KEY, CX_CODE } from './js/config.js';
+import { API_KEY, CX_CODE } from '../js/config.js';
 
 let currentPage = 1;
 const resultsPerPage = 10;
