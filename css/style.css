@@ -82,21 +82,24 @@ body {
 .search_camp {
     display: flex;
     align-items: center;
-    border: 1px solid #808080;
-    height: 50px;
-    width: 90%; /* Ajusta a largura para ocupar mais da largura da tela */
-    padding: 8px 16px; /* Reduz o padding para telas menores */
+    border: 1px solid #dfe1e5;
+    height: 48px;
+    width: 100%;
+    padding: 8px 16px;
     margin: 0 auto;
-    margin-top: 20px; /* Ajusta a margem superior para telas menores */
-    max-width: 500px;
+    margin-top: 20px;
+    max-width: 550px;
     border-radius: 999px;
-    transition: box-shadow 0.3s, background-color 0.3s;
+    transition:
+        box-shadow 0.2s,
+        background-color 0.2s;
+    background: #fff;
 }
 
 .search_camp:hover,
 .search_camp:focus {
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.24);
-    background-color: #eeeeee;
+    box-shadow: 0 0 5px 3px rgba(175, 175, 175, 0.24);
+    background-color: #ffffff;
 }
 
 .search_camp input {
@@ -111,11 +114,13 @@ body {
 
 .search_camp:hover input,
 .search_camp:focus input {
-    background-color: #eeeeee;
+    background-color: #ffffff;
 }
 
 .search_camp .material-icons {
-    color: #808080;
+    margin-top: 3px;
+    color: #acb0b5;
+    margin: 5px;
 }
 
 /* Search Button Styles */
@@ -126,47 +131,109 @@ body {
 }
 
 .search_btn button {
-    background-color: #eeeeee;
-    border: none;
-    outline: none;
-    border-radius: 5px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
     color: #3c4043;
-    font-size: 12px; /* Reduz o tamanho da fonte para telas menores */
+    font-family: arial, sans-serif;
+    font-size: 14px;
     margin: 11px 4px;
-    padding: 0 12px; /* Reduz o padding para telas menores */
+    padding: 0 16px;
     line-height: 27px;
     height: 36px;
     min-width: 54px;
     text-align: center;
     cursor: pointer;
+    user-select: none;
 }
 
 .search_btn button:hover {
-    background-color: #eeeeee;
+    background-color: #f8f9fa;
     border: 1px solid #d3d3d3;
+}
+
+.Umvnrc {
+    flex: 0 auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 8px;
+    width: 24px;
+    line-height: 44px;
+    margin-right: 7px; /* Adiciona margem entre o ícone e os ícones SVG */
+}
+
+.ly0Ckb {
+    background: url(https://www.gstatic.com/inputtools/images/tia.png) no-repeat center;
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    margin: -10px;
+}
+
+.yAnw3c {
+    visibility: hidden;
 }
 
 /* Media Query for Responsive Design */
 @media only screen and (max-width: 768px) {
     .top {
-        padding: 10px; /* Reduz o padding para telas menores */
+        padding: 5px;
     }
 
     .topright .material-icons::before {
-        width: 25px; /* Reduz o tamanho para telas menores */
-        height: 25px; /* Reduz o tamanho para telas menores */
+        width: 25px;
+        height: 25px;
     }
 
     .search_logo img {
-        height: 60px; /* Reduz a altura da imagem para telas menores */
+        height: 60px;
     }
 
     .search_camp {
-        margin-top: 15px; /* Ajusta a margem superior para telas menores */
+        margin-top: 15px;
+        padding: 12px; /* Increase padding for better spacing */
+        max-width: 100%; /* Allow the search bar to take the full width */
+    }
+
+    .search_camp input {
+        font-size: 14px; /* Adjust font size for smaller screens */
     }
 
     .search_btn {
-        margin-top: 15px; /* Ajusta a margem superior para telas menores */
+        display: flex; /* Ensure the buttons are displayed as flex items */
+        justify-content: space-between; /* Distribute space between the buttons */
+        align-items: center;
+        margin: 20px;
+    }
+
+    .search_btn button {
+        margin: 5px;
+        min-width: auto;
+    }
+
+    .Umvnrc {
+        margin-right: 0; /* Remove right margin on Umvnrc */
+    }
+
+    .search_camp .material-icons,
+    .Umvnrc img,
+    .material-icons svg {
+        margin: 5px 0; /* Adjust margins for better spacing */
+    }
+
+    .material-icons svg {
+        margin-right: 7px; /* Reset margin for better spacing */
     }
 }
+
+.material-icons svg {
+    height: 24px; /* Altura desejada para os ícones */
+    width: 24px; /* Largura desejada para os ícones */
+    margin-right: 7px; /* Adicione margem entre os ícones conforme necessário */
+}
+
 /* @juniordelonge */
