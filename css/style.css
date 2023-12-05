@@ -1,0 +1,170 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 10px; /* Adiciona algum espaço ao redor do conteúdo para telas menores */
+}
+
+/* Top Styles */
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px; /* Reduz o padding para telas menores */
+    align-items: center;
+}
+
+.top a {
+    margin-right: 10px;
+    color: #0a0a0a;
+    font-size: 12px; /* Reduz o tamanho da fonte para telas menores */
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.top a:hover {
+    color: #1d1d1d;
+}
+
+.topright {
+    display: flex;
+    align-items: center;
+    min-width: auto; /* Remove a largura mínima para telas menores */
+}
+
+.topright .material-icons {
+    margin-right: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.topright .material-icons::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px; /* Reduz o tamanho para telas menores */
+    height: 30px; /* Reduz o tamanho para telas menores */
+    background-color: transparent;
+    border-radius: 50%;
+    z-index: -1;
+    transition: background-color 0.3s;
+}
+
+.topright .material-icons:hover::before {
+    background-color: #e6e6e6;
+}
+
+/* Search Logo Styles */
+.search_logo {
+    flex: 1;
+    display: flex;
+    margin-top: 8%; /* Reduz a margem superior para telas menores */
+    flex-direction: column;
+}
+
+.search_logo img {
+    object-fit: contain;
+    height: 80px; /* Reduz a altura da imagem para telas menores */
+}
+
+/* Search Camp Styles */
+.search_camp {
+    display: flex;
+    align-items: center;
+    border: 1px solid #808080;
+    height: 50px;
+    width: 90%; /* Ajusta a largura para ocupar mais da largura da tela */
+    padding: 8px 16px; /* Reduz o padding para telas menores */
+    margin: 0 auto;
+    margin-top: 20px; /* Ajusta a margem superior para telas menores */
+    max-width: 500px;
+    border-radius: 999px;
+    transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+.search_camp:hover,
+.search_camp:focus {
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.24);
+    background-color: #eeeeee;
+}
+
+.search_camp input {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    transition: background-color 0.3s;
+}
+
+.search_camp:hover input,
+.search_camp:focus input {
+    background-color: #eeeeee;
+}
+
+.search_camp .material-icons {
+    color: #808080;
+}
+
+/* Search Button Styles */
+.search_btn {
+    margin-top: 20px; /* Ajusta a margem superior para telas menores */
+    display: flex;
+    justify-content: center;
+}
+
+.search_btn button {
+    background-color: #eeeeee;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #3c4043;
+    font-size: 12px; /* Reduz o tamanho da fonte para telas menores */
+    margin: 11px 4px;
+    padding: 0 12px; /* Reduz o padding para telas menores */
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.search_btn button:hover {
+    background-color: #eeeeee;
+    border: 1px solid #d3d3d3;
+}
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .top {
+        padding: 10px; /* Reduz o padding para telas menores */
+    }
+
+    .topright .material-icons::before {
+        width: 25px; /* Reduz o tamanho para telas menores */
+        height: 25px; /* Reduz o tamanho para telas menores */
+    }
+
+    .search_logo img {
+        height: 60px; /* Reduz a altura da imagem para telas menores */
+    }
+
+    .search_camp {
+        margin-top: 15px; /* Ajusta a margem superior para telas menores */
+    }
+
+    .search_btn {
+        margin-top: 15px; /* Ajusta a margem superior para telas menores */
+    }
+}
