@@ -21,6 +21,7 @@ body {
     justify-content: space-between;
     padding: 10px 20px;
     align-items: center;
+    margin-top: 1%;
 }
 
 .top a {
@@ -73,7 +74,7 @@ body {
 .search_logo {
     flex: 1;
     display: flex;
-    margin-top: 8%;
+    margin-top: 10%;
     flex-direction: column;
 }
 
@@ -193,8 +194,10 @@ body {
 /* Media Query for Responsive Design */
 @media only screen and (max-width: 768px) {
     .top {
-        padding: 5px;
-    }
+        display: flex;
+    padding: 10px 20px;
+    margin-top: 1%;
+}
 
     .topright .material-icons::before {
         width: 25px;
@@ -204,7 +207,12 @@ body {
     .search_logo img {
         height: 50px;
     }
-
+    .search_logo {
+        flex: 1;
+        display: flex;
+        margin-top: 10%;
+        flex-direction: column;
+    }
     .search_camp {
         margin-top: 26px;
         max-width: 95%;
