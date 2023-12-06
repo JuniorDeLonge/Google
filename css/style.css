@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    padding: 10px;
+    margin: 0 auto;
 }
 
 /* Top Styles */
@@ -31,14 +31,18 @@ body {
     text-decoration: none;
 }
 
-.top a:hover {
-    color: #1d1d1d;
-}
-
 .topright {
     display: flex;
     align-items: center;
     min-width: auto;
+}
+
+.topright a:hover {
+    text-decoration: underline;
+}
+
+.topright a {
+    text-decoration: none;
 }
 
 .topright .material-icons {
@@ -240,3 +244,77 @@ body {
 }
 
 /* @juniordelonge */
+
+/* CSS para o rodapé */
+.c93Gbe {
+    background: #f2f2f2;
+}
+
+.uU7dJb {
+    padding: 16px 36px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 13px;
+    color: #202124;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Wymece {
+    justify-content: flex-end;
+}
+
+.SSwjIe {
+    padding: 0 20px;
+}
+
+.KxwPGc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pHiOh {
+    display: block;
+    padding: 13px;
+    white-space: nowrap;
+}
+
+.pHiOh, a.pHiOh {
+    color: #202124;
+    font-size: 13px;
+}
+
+.pHiOh:hover {
+    text-decoration: underline;
+}
+
+.pHiOh {
+    text-decoration: none;
+}
+/* @juniordelonge */
+
+@media only screen and (max-width: 768px) {
+  
+    .KxwPGc {
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .pHiOh {
+        padding: 5px;
+    }
+    .c93Gbe {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .uU7dJb {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
