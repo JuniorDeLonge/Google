@@ -83,17 +83,17 @@ body {
     display: flex;
     align-items: center;
     border: 1px solid #dfe1e5;
-    height: 48px;
+    height: 50px;
     width: 100%;
-    padding: 8px 16px;
+    padding: 5px 10px;
     margin: 0 auto;
     margin-top: 20px;
     max-width: 550px;
     border-radius: 999px;
-    transition:
-        box-shadow 0.2s,
-        background-color 0.2s;
+    transition: box-shadow 0.2s, background-color 0.2s;
     background: #fff;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
 .search_camp:hover,
@@ -171,7 +171,7 @@ body {
     height: 24px;
     width: 24px;
     vertical-align: middle;
-    margin: -10px;
+    margin: -16px;
 }
 
 .yAnw3c {
@@ -204,10 +204,11 @@ body {
     }
 
     .search_btn {
-        display: flex; /* Ensure the buttons are displayed as flex items */
-        justify-content: space-between; /* Distribute space between the buttons */
+        display: flex;
+        justify-content: space-around;
         align-items: center;
-        margin: 20px;
+        margin: 22px;
+        flex-direction: row;
     }
 
     .search_btn button {
