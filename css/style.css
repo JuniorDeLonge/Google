@@ -195,9 +195,9 @@ body {
 @media only screen and (max-width: 768px) {
     .top {
         display: flex;
-    padding: 10px 20px;
-    margin-top: 1%;
-}
+        padding: 10px 20px;
+        margin-top: 1%;
+    }
 
     .topright .material-icons::before {
         width: 25px;
@@ -290,7 +290,8 @@ body {
     white-space: nowrap;
 }
 
-.pHiOh, a.pHiOh {
+.pHiOh,
+a.pHiOh {
     color: #202124;
     font-size: 13px;
 }
@@ -305,7 +306,6 @@ body {
 /* @juniordelonge */
 
 @media only screen and (max-width: 768px) {
-  
     .KxwPGc {
         flex-direction: row;
         align-items: center;
