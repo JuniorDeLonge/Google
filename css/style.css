@@ -12,21 +12,21 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    padding: 10px; /* Adiciona algum espaço ao redor do conteúdo para telas menores */
+    padding: 10px;
 }
 
 /* Top Styles */
 .top {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px; /* Reduz o padding para telas menores */
+    padding: 10px 20px;
     align-items: center;
 }
 
 .top a {
     margin-right: 10px;
     color: #0a0a0a;
-    font-size: 12px; /* Reduz o tamanho da fonte para telas menores */
+    font-size: 12px;
     font-weight: 300;
     text-decoration: none;
 }
@@ -38,7 +38,7 @@ body {
 .topright {
     display: flex;
     align-items: center;
-    min-width: auto; /* Remove a largura mínima para telas menores */
+    min-width: auto;
 }
 
 .topright .material-icons {
@@ -53,8 +53,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 30px; /* Reduz o tamanho para telas menores */
-    height: 30px; /* Reduz o tamanho para telas menores */
+    width: 30px;
+    height: 30px;
     background-color: transparent;
     border-radius: 50%;
     z-index: -1;
@@ -64,18 +64,18 @@ body {
 .topright .material-icons:hover::before {
     background-color: #e6e6e6;
 }
-
+/* @juniordelonge */
 /* Search Logo Styles */
 .search_logo {
     flex: 1;
     display: flex;
-    margin-top: 8%; /* Reduz a margem superior para telas menores */
+    margin-top: 8%;
     flex-direction: column;
 }
 
 .search_logo img {
     object-fit: contain;
-    height: 80px; /* Reduz a altura da imagem para telas menores */
+    height: 80px;
 }
 
 /* Search Camp Styles */
@@ -90,7 +90,9 @@ body {
     margin-top: 20px;
     max-width: 550px;
     border-radius: 999px;
-    transition: box-shadow 0.2s, background-color 0.2s;
+    transition:
+        box-shadow 0.2s,
+        background-color 0.2s;
     background: #fff;
     justify-content: space-around;
     flex-direction: row;
@@ -125,7 +127,7 @@ body {
 
 /* Search Button Styles */
 .search_btn {
-    margin-top: 20px; /* Ajusta a margem superior para telas menores */
+    margin-top: 20px;
     display: flex;
     justify-content: center;
 }
@@ -151,7 +153,7 @@ body {
     background-color: #f8f9fa;
     border: 1px solid #d3d3d3;
 }
-
+/* @juniordelonge */
 .Umvnrc {
     flex: 0 auto;
     display: flex;
@@ -163,7 +165,7 @@ body {
     padding: 0 8px;
     width: 24px;
     line-height: 44px;
-    margin-right: 7px; /* Adiciona margem entre o ícone e os ícones SVG */
+    margin-right: 7px;
 }
 
 .ly0Ckb {
@@ -176,6 +178,12 @@ body {
 
 .yAnw3c {
     visibility: hidden;
+}
+
+.material-icons svg {
+    height: 24px;
+    width: 24px;
+    margin-right: 7px;
 }
 
 /* Media Query for Responsive Design */
@@ -195,12 +203,12 @@ body {
 
     .search_camp {
         margin-top: 15px;
-        padding: 12px; /* Increase padding for better spacing */
-        max-width: 100%; /* Allow the search bar to take the full width */
+        padding: 12px;
+        max-width: 100%;
     }
 
     .search_camp input {
-        font-size: 14px; /* Adjust font size for smaller screens */
+        font-size: 14px;
     }
 
     .search_btn {
@@ -217,24 +225,18 @@ body {
     }
 
     .Umvnrc {
-        margin-right: 0; /* Remove right margin on Umvnrc */
+        margin-right: 0;
     }
 
     .search_camp .material-icons,
     .Umvnrc img,
     .material-icons svg {
-        margin: 5px 0; /* Adjust margins for better spacing */
+        margin: 5px 0;
     }
 
     .material-icons svg {
-        margin-right: 7px; /* Reset margin for better spacing */
+        margin-right: 7px;
     }
-}
-
-.material-icons svg {
-    height: 24px; /* Altura desejada para os ícones */
-    width: 24px; /* Largura desejada para os ícones */
-    margin-right: 7px; /* Adicione margem entre os ícones conforme necessário */
 }
 
 /* @juniordelonge */
