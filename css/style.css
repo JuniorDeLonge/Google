@@ -202,29 +202,29 @@ body {
     }
 
     .search_logo img {
-        height: 60px;
+        height: 50px;
     }
 
     .search_camp {
-        margin-top: 15px;
-        padding: 12px;
-        max-width: 100%;
+        margin-top: 26px;
+        max-width: 95%;
+        padding: 5px;
     }
 
     .search_camp input {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .search_btn {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin: 22px;
+        margin: 25px;
         flex-direction: row;
     }
 
     .search_btn button {
-        margin: 5px;
+        margin: 4px;
         min-width: auto;
     }
 
@@ -235,9 +235,11 @@ body {
     .search_camp .material-icons,
     .Umvnrc img,
     .material-icons svg {
-        margin: 5px 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
-
     .material-icons svg {
         margin-right: 7px;
     }
