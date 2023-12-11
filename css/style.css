@@ -7,6 +7,10 @@
     font-family: Arial, sans-serif;
 }
 
+html {
+    touch-action: manipulation;
+}
+
 /* Body Styles */
 body {
     display: flex;
