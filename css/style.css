@@ -273,7 +273,7 @@ body {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin: 20px 60px;
+        margin: 20px 55px;
         flex-direction: row;
     }
 
