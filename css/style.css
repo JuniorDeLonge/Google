@@ -25,10 +25,10 @@ body {
 }
 
 .top a {
-    margin-right: 20px;
+    margin-right: 15px;
     color: #0a0a0a;
-    font-size: 13px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 300;
     text-decoration: none;
 }
 
@@ -46,28 +46,28 @@ body {
     text-decoration: none;
 }
 
-.topright .material-icons {
+.topright .material-symbols-outlined {
     margin-right: 15px;
     cursor: pointer;
     position: relative;
 }
 
-.topright .material-icons::before {
+.topright .material-symbols-outlined::before {
     content: "";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-color: transparent;
     border-radius: 50%;
     z-index: -1;
     transition: background-color 0.3s;
 }
 
-.topright .material-icons:hover::before {
-    background-color: #e6e6e6;
+.topright .material-symbols-outlined:hover::before {
+    background-color: #f0f0f0;
 }
 /* @juniordelonge */
 /* Search Logo Styles */
@@ -87,19 +87,18 @@ body {
 .search_camp {
     display: flex;
     align-items: center;
-    border: 1px solid #dfe1e5;
-    height: 50px;
-    width: 100%;
-    padding: 5px 10px;
+    border: 1.8px solid #dfe1e5;
+    height: 44px;
+    padding: 10px 8px 10px 16px;
     margin: 0 auto;
     margin-top: 20px;
-    max-width: 550px;
-    border-radius: 999px;
+    max-width: 580px;
+    border-radius: 24px;
     transition:
         box-shadow 0.2s,
         background-color 0.2s;
     background: #fff;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: row;
 }
 
@@ -124,7 +123,7 @@ body {
     background-color: #ffffff;
 }
 
-.search_camp .material-icons {
+.search_camp .material-symbols-outlined {
     margin-top: 3px;
     color: #acb0b5;
     margin: 5px;
@@ -158,6 +157,45 @@ body {
     background-color: #f8f9fa;
     border: 1px solid #d3d3d3;
 }
+
+#closer {
+    right: 0;
+    top: 0;
+    position: relative;
+    font-size: 1.6rem;
+    cursor: pointer;
+    display: none;
+    transform: translateY(-5%);
+}
+
+#closer.show {
+    display: block;
+}
+
+.ACRAdd.M2vV3 {
+    display: block;
+}
+
+.ACRAdd {
+    display: none;
+}
+.ACRAdd {
+    border-left: 1px solid #5f6368;
+    height: 85%;
+    margin: 5px;
+}
+.M2vV3 {
+    display: flex;
+}
+.BKRPef {
+    background: transparent;
+    align-items: center;
+    flex: 1 0 auto;
+    flex-direction: row;
+    display: flex;
+    cursor: pointer;
+}
+
 /* @juniordelonge */
 .Umvnrc {
     flex: 0 auto;
@@ -173,12 +211,20 @@ body {
     margin-right: 7px;
 }
 
+/* Estilos para a tela normal */
 .ly0Ckb {
     background: url(https://www.gstatic.com/inputtools/images/tia.png) no-repeat center;
     height: 24px;
-    width: 24px;
+    width: 48px;
     vertical-align: middle;
     margin: -16px;
+}
+
+/* Estilos para a tela responsiva (largura menor que 768 pixels, por exemplo) */
+@media screen and (max-width: 768px) {
+    .ly0Ckb {
+        width: 41px;
+    }
 }
 
 .yAnw3c {
@@ -199,7 +245,7 @@ body {
         margin-top: 1%;
     }
 
-    .topright .material-icons::before {
+    .topright .material-symbols-outlined::before {
         width: 25px;
         height: 25px;
     }
@@ -240,15 +286,15 @@ body {
         margin-right: 0;
     }
 
-    .search_camp .material-icons,
+    .search_camp .material-symbols-outlined,
     .Umvnrc img,
-    .material-icons svg {
-        margin: 0;
+    .material-symbols-outlined svg {
+        margin: 5px;
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
-    .material-icons svg {
+    .material-symbols-outlined svg {
         margin-right: 7px;
     }
 }
