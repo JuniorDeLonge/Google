@@ -271,10 +271,9 @@ body {
 
     .search_btn {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         margin: 20px 55px;
-        flex-direction: row;
     }
 
     .Umvnrc {
