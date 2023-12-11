@@ -71,16 +71,47 @@ body {
 }
 /* @juniordelonge */
 /* Search Logo Styles */
+
 .search_logo {
-    flex: 1;
-    display: flex;
-    margin-top: 10%;
-    flex-direction: column;
+    flex: 1 1 auto;
 }
 
-.search_logo img {
+.LS8OJ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kKvsb {
+    max-height: 230px;
+    position: relative;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.SuUcIb {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    right: -32px;
+    bottom: 12px;
+}
+
+@media (pointer: coarse) {
+    .SuUcIb {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+.lnXdpd {
+    max-height: 100%;
+    max-width: 100%;
     object-fit: contain;
-    height: 80px;
+    object-position: center bottom;
+    width: auto;
+    vertical-align: bottom;
 }
 
 /* Search Camp Styles */
@@ -250,15 +281,6 @@ body {
         height: 25px;
     }
 
-    .search_logo img {
-        height: 50px;
-    }
-    .search_logo {
-        flex: 1;
-        display: flex;
-        margin-top: 10%;
-        flex-direction: column;
-    }
     .search_camp {
         margin-top: 26px;
         max-width: 95%;
