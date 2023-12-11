@@ -277,10 +277,6 @@ body {
         flex-direction: row;
     }
 
-    .search_btn button {
-        min-width: auto;
-    }
-
     .Umvnrc {
         margin-right: 0;
     }
