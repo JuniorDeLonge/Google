@@ -147,7 +147,8 @@ body {
     font-size: 16px;
     font-weight: 300;
     transition: background-color 0.3s;
-    touch-action: manipulation; 
+    touch-action: manipulation;
+    user-scalable: no;
 }
 
 .search_camp:hover input,
