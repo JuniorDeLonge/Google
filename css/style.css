@@ -251,6 +251,21 @@ body {
     margin: -16px;
 }
 
+.material-icons a {
+    text-decoration: none;
+    color: #000; /* Set your desired color */
+}
+
+.material-icons a:hover {
+    text-decoration: underline;
+}
+
+.material-icons svg {
+    height: 24px;
+    width: 24px;
+    margin-right: 7px;
+}
+
 /* Estilos para a tela responsiva (largura menor que 768 pixels, por exemplo) */
 @media screen and (max-width: 768px) {
     .ly0Ckb {
@@ -260,12 +275,6 @@ body {
 
 .yAnw3c {
     visibility: hidden;
-}
-
-.material-icons svg {
-    height: 24px;
-    width: 24px;
-    margin-right: 7px;
 }
 
 /* Media Query for Responsive Design */
