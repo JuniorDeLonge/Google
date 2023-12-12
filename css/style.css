@@ -13,6 +13,76 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0 auto;
+    transition:
+        background-color 0.3s,
+        color 0.3s;
+}
+
+/* @juniordelonge */
+/* Body Dark Mode */
+body.dark-mode {
+    background-color: rgba(32, 33, 36, 1);
+    color: rgb(190, 193, 198);
+}
+
+.dark-mode .topright a {
+    background-color: rgba(32, 33, 36, 1);
+    color: rgb(190, 193, 198);
+}
+
+.dark-mode .search_btn {
+    background-color: rgba(32, 33, 36, 1);
+    color: rgb(190, 193, 198);
+}
+.dark-mode .search_btn button {
+    background-color: rgb(53, 53, 54);
+    color: rgb(190, 193, 198);
+    border: none;
+    outline: none;
+}
+
+.dark-mode .search_btn button:hover {
+    background-color: rgb(39, 40, 41);
+    color: rgb(190, 193, 198);
+    border: 1px solid;
+}
+/* @juniordelonge */
+
+.dark-mode .c93Gbe,
+.dark-mode .pHiOh {
+    background-color: rgb(22, 22, 22);
+    color: rgb(190, 193, 198);
+}
+
+.dark-mode .uU7dJb {
+    background-color: rgb(22, 22, 22);
+    color: rgb(190, 193, 198);
+    border-bottom: 1px solid #3c4043;
+}
+
+.dark-mode .topright .material-symbols-outlined:hover::before {
+    background-color: rgba(54, 53, 53, 0.871);
+    color: rgb(190, 193, 198);
+}
+
+.dark-mode .search_camp {
+    background: rgba(32, 33, 36, 1);
+    border: 1px solid #5f6368;
+}
+
+.dark-mode .search_camp input {
+    background-color: rgba(32, 33, 36, 1);
+    color: rgb(190, 193, 198);
+    transition: background-color 0.1s;
+}
+/* @juniordelonge */
+
+.dark-mode .search_camp:hover,
+.dark-mode .search_camp:hover input {
+    background-color: rgb(58, 58, 58);
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0 0 rgba(14, 14, 14, 0.884);
 }
 
 /* Top Styles */
@@ -118,7 +188,7 @@ body {
 .search_camp {
     display: flex;
     align-items: center;
-    border: 1.8px solid #dfe1e5;
+    border: 1px solid #dfe1e5;
     height: 44px;
     padding: 10px 8px 10px 16px;
     margin: 0 auto;
@@ -126,8 +196,9 @@ body {
     max-width: 580px;
     border-radius: 24px;
     transition:
-        box-shadow 0.2s,
-        background-color 0.2s;
+        box-shadow 0.1s,
+        background-color 0.1s;
+
     background: #fff;
     justify-content: center;
     flex-direction: row;
@@ -158,6 +229,7 @@ body {
     margin-top: 3px;
     color: #acb0b5;
     margin: 5px;
+    font-size: 1.2rem;
 }
 
 /* Search Button Styles */
