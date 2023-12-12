@@ -75,7 +75,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
+
 // @juniordelonge
+
 function applyDarkMode() {
   const prefersDarkMode = window.matchMedia(
     "(prefers-color-scheme: dark)"
@@ -88,3 +90,5 @@ applyDarkMode();
 window
   .matchMedia("(prefers-color-scheme: dark)")
   .addEventListener("change", applyDarkMode);
+
+// @juniordelonge
